@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, StatusBar } from 'react-native';
 
 
 const styles = StyleSheet.create({
@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 10,
       paddingVertical: 50,
       backgroundColor: '#f0eaea',
+      paddingTop: StatusBar.currentHeight,
     },
     input: {
       borderWidth: 1,
@@ -42,7 +43,14 @@ const styles = StyleSheet.create({
       fontSize: 30,
       color: '#000',
       marginBottom: 20,
-    }
+    },
+      item: {
+        margin: 24,
+        fontSize: 18,
+        fontWeight: 'bold',
+        textAlign: 'center',
+      },
   });
+
 
 export default styles;
